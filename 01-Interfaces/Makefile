@@ -1,21 +1,3 @@
-# Hello.c
-# Comentario
-
-#all: Hello.exe
-
-#run: Hello.exe
-#	./Hello.exe
-
-#Hello.exe: Hello.o
-#	gcc Hello.o -o Hello.exe
-
-#Hello.o: Hello.c
-#	gcc -c Hello.c -std=c18 -o Hello.o
-
-#clean:
-#	del Hello.o
-#	del Hello.exe
-
 run: TablasDeConversion.exe
 	./TablasDeConversion.exe
 
