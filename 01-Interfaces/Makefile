@@ -15,15 +15,16 @@ borrar:
 	del Conversion.o
 	del TablasDeConversion.exe
 	
-run2: ConversionTest.exe
+runTest: ConversionTest.exe
 	./ConversionTest.exe
 
-ConversionTest.exe: ConversionTest.o
-	gcc ConversionTest.o -o ConversionTest.exe
+ConversionTest.exe: ConversionTest.o Conversion.o
+	gcc ConversionTest.o Conversion.o -o ConversionTest.exe
 
 ConversionTest.o: ConversionTest.c
 	gcc -c ConversionTest.c -std=c18 -o ConversionTest.o
 
-borrar2:
+borrarTest:
 	del ConversionTest.o
 	del ConversionTest.exe
+	del Conversion.o
