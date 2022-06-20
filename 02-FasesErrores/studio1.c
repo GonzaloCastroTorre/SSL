@@ -1,3 +1,3 @@
 void prontf(const char* s, int i){
- printf("La respuesta es %d\n", i,7);
+ printf("La respuesta es %d\n", i);
 }
